@@ -3,7 +3,7 @@ import connectDB from "@/config/database"
 import User from "@/models/User"
 import { getSessionUser } from "@/utils/getSessionUser"
 import { revalidatePath } from "next/cache"
-
+//try to fix errors
 async function bookmarkProperty(propertyId){
     await connectDB()
     const sessionUser = await getSessionUser()
